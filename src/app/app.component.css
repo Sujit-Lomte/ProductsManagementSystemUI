@@ -1,0 +1,13 @@
+.container {
+    padding-top: 15px;
+}
+.navbar{
+    background-color: #265073;
+}
+.navbar a{
+    color: white;
+    text-align: center;
+}
+h1{
+    text-align: center !important;
+}

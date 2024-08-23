@@ -1,0 +1,41 @@
+<h3 class="mb-4"> List of Products </h3>
+<div class="col mb-4">
+    <button type="button" class="btn btn-sm m-1 addNewBtn" (click)="addProduct()">
+        <i class="bi"></i> Add New Product
+    </button>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(Product of Products; track $index) {
+        <tr>
+            <th scope="row">{{Product.id}}</th>
+            <td>{{Product.productName}}</td>
+            <td>{{Product.productPrice}}</td>
+            <td>{{Product.productQuantity}}</td>
+            <td>
+                <button type="button" class="btn btn-sm edit m-1" (click)="editProduct(Product)">
+                      Edit</button>
+            </td>
+            <td>
+                <button (click)="deleteProduct(Product.id)" type="button" class="btn btn-sm btn-danger m-1"> 
+                     Delete</button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<app-confirmation-dialog></app-confirmation-dialog>
+<app-edit-product-dialog></app-edit-product-dialog>
+
+

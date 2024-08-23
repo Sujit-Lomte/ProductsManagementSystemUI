@@ -1,0 +1,19 @@
+tr.bg-red td {
+    background-color: #ffe7e7;
+}
+tr.bg-yellow td {
+    background-color: #fdfdde;
+}
+.addNewBtn{
+    background-color: #2D9596;
+    color: white;
+}
+table{
+    box-shadow: 1px 1px 3px grey;
+}
+table tr th{
+    padding: 10px;
+}
+.edit{
+    background-color: #9AD0C2;
+}
